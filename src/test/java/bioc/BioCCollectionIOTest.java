@@ -1,4 +1,4 @@
-package bioc.test.junit;
+package bioc;
 
 import java.io.File;
 import java.io.FileReader;
