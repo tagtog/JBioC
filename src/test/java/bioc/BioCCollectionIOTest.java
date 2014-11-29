@@ -17,6 +17,7 @@ import org.custommonkey.xmlunit.Difference;
 import org.custommonkey.xmlunit.XMLAssert;
 import org.custommonkey.xmlunit.XMLUnit;
 import org.junit.BeforeClass;
+import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
@@ -28,6 +29,8 @@ import bioc.io.BioCCollectionWriter;
 import bioc.io.BioCFactory;
 
 public class BioCCollectionIOTest {
+
+  File dir;
 
   @Rule
   public TemporaryFolder testFolder = new TemporaryFolder();
@@ -59,12 +62,16 @@ public class BioCCollectionIOTest {
     XMLUnit.setControlDocumentBuilderFactory(dbf);
   }
 
+  @Before
+  public void setUp() throws Exception {
+    dir = new File(getClass().getResource("/xml").toURI());
+  }
+
   @Test
   public void testWoodstox()
       throws Exception {
     File tempFile = testFolder.newFile("test.woodstox.xml");
 
-    File dir = new File("xml");
     File[] files = dir.listFiles(new FilenameFilter() {
 
       @Override
@@ -86,7 +93,7 @@ public class BioCCollectionIOTest {
   public void testStandard()
       throws Exception {
     File tempFile = testFolder.newFile("test.standard.xml");
-    File dir = new File("xml");
+
     File[] files = dir.listFiles(new FilenameFilter() {
 
       @Override
