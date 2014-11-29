@@ -6,8 +6,10 @@ Initial credits go fully to the authors of the BioC project and specially to the
 
 The initial goals of this repository are:
 
-* make the code a maven project, including the tests
-* ease the use of the library by publishing the package in Maven Central and by distributing the code via GitHub
+* (&#x2714;) make the code a maven project, ( ) including the tests
+* ease the use of the library by:
+  * ( ) publishing the package in Maven Central
+  * (&#x2714;) distributing the code via GitHub
 
 ## BioC format
 
