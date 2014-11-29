@@ -2,11 +2,14 @@ This is a java and maven-packaged implementation of the [BioC exchange format](h
 
 Initial credits go fully to the authors of the BioC project and specially to the authors of the first java code v1.0, from which this implementation was derived.
 
+[![Build Status](https://travis-ci.org/jmcejuela/JBioC.svg)](https://travis-ci.org/jmcejuela/JBioC)
+
 ## This repository
 
 The initial goals of this repository are:
 
-* (&#x2714;) make the code a maven project, ( ) including the tests
+* (&#x2714;) make the code a maven project
+* ( ) automate tests
 * ease the use of the library by:
   * ( ) publishing the package in Maven Central
   * (&#x2714;) distributing the code via GitHub
