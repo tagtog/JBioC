@@ -1,6 +1,6 @@
 This is a java and maven-packaged implementation of the [BioC exchange format](http://bioc.sourceforge.net/)
 
-Initial credits go fully to the authors of the BioC project and specially to the authors of the first java code v1.0.
+Initial credits go fully to the authors of the BioC project and specially to the authors of the first java code v1.0, from which this implementation was derived.
 
 ## This repository
 
