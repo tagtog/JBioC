@@ -9,7 +9,7 @@ import javax.management.relation.Relation;
 
 /**
  * One passage in a {@link Document}.
- * 
+ *
  * This might be the {@code text} in the passage and possibly
  * {@link Annotation}s over that text. It could be the
  * {@link Sentence}s in the passage. In either case it might include
@@ -33,7 +33,7 @@ public class BioCPassage {
 
   /**
    * Information of text in the passage.
-   * 
+   *
    * For PubMed references, it might be "title" or "abstract". For full text
    * papers, it might be Introduction, Methods, Results, or Conclusions. Or
    * they might be paragraphs.
@@ -95,7 +95,7 @@ public class BioCPassage {
   }
 
   /**
-   * @param sentences the sentences to set
+   * @param sentence to add
    */
   public void addSentence(BioCSentence sentence) {
     sentences.add(sentence);

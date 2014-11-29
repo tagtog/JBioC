@@ -8,7 +8,7 @@ import java.util.Map;
 
 /**
  * Each {@code BioCDocument} in the {@link BioCCollection}.
- * 
+ *
  * An id, typically from the original corpus, identifies the particular
  * document. It includes {@link BioCPassage}s in the document and
  *  possibly {@link BioCRelation}s over annotations on the document.
@@ -24,7 +24,7 @@ public class BioCDocument implements Iterable<BioCPassage> {
 
   /**
    * List of passages that comprise the document.
-   * 
+   *
    * For PubMed references, they might be "title" and "abstract". For full text
    * papers, they might be Introduction, Methods, Results, and Conclusions. Or
    * they might be paragraphs.
@@ -105,7 +105,7 @@ public class BioCDocument implements Iterable<BioCPassage> {
   }
 
   /**
-   * @param passages the passages to set
+   * @param passage to add
    */
   public void addPassage(BioCPassage passage) {
     passages.add(passage);
@@ -124,7 +124,7 @@ public class BioCDocument implements Iterable<BioCPassage> {
     s += passages;
     s += "\n";
     s += relations;
-    s += "\n"; 
+    s += "\n";
     return s;
   }
 

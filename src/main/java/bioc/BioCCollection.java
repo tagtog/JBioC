@@ -11,10 +11,10 @@ import bioc.util.BioCSentenceIterator;
 
 /**
  * Collection of documents.
- * 
+ *
  * Collection of documents for a project. They may be an entire corpus or some
  * portion of a corpus. Fields are provided to describe the collection.
- * 
+ *
  * Documents may appear empty if doing document at a time IO.
  */
 public class BioCCollection implements Iterable<BioCDocument> {
@@ -131,7 +131,7 @@ public class BioCCollection implements Iterable<BioCDocument> {
   }
 
   /**
-   * @param documents the documents to set
+   * @param document to add
    */
   public void addDocument(BioCDocument document) {
     documents.add(document);

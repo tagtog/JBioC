@@ -437,8 +437,8 @@ public class ConnectorWoodstox implements Iterator<BioCDocument> {
 
   /**
    * Start reading XML file
-   * 
-   * @param filename XML file to read
+   *
+   * @param in reader of XML file
    */
   public BioCCollection startRead(Reader in) {
     XMLInputFactory2 xmlif = null;
@@ -511,10 +511,10 @@ public class ConnectorWoodstox implements Iterator<BioCDocument> {
 
   /**
    * Starting writing an XML document.
-   * 
-   * @param filename name of the XML file to write
+   *
+   * @param out writer to XML file
    * @param collection collection to write
-   * 
+   *
    *          Since this class is for document at a time IO, any documents in
    *          the collection are ignored.
    */
@@ -566,7 +566,7 @@ public class ConnectorWoodstox implements Iterator<BioCDocument> {
 
   /**
    * Write the next document to the XML file.
-   * 
+   *
    * @param document document to write
    */
   public void writeNext(BioCDocument document) {
