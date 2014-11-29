@@ -8,12 +8,12 @@ import java.util.Map;
 import javax.management.relation.Relation;
 
 /**
- * One passage in a {@link Document}.
+ * One passage in a {@link BioCDocument}.
  *
  * This might be the {@code text} in the passage and possibly
- * {@link Annotation}s over that text. It could be the
- * {@link Sentence}s in the passage. In either case it might include
- * {@link Relation}s over annotations on the passage.
+ * {@link BioCAnnotation}s over that text. It could be the
+ * {@link BioCSentence}s in the passage. In either case it might include
+ * {@link BioCRelation}s over annotations on the passage.
  */
 public class BioCPassage {
 

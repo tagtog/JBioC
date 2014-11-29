@@ -8,12 +8,12 @@ import java.util.Map;
 import javax.management.relation.Relation;
 
 /**
- * One sentence in a {@link Passage}.
- * 
+ * One sentence in a {@link BioCPassage}.
+ *
  * It may contain the original text of the sentence or it might be
- * {@link Annotation}s and possibly {@link Relation}s on the text of the
+ * {@link BioCAnnotation}s and possibly {@link BioCRelation}s on the text of the
  * passage.
- * 
+ *
  * There is no code to keep those possibilities mutually exclusive. However the
  * currently available DTDs only describe the listed possibilities
  */
@@ -33,7 +33,7 @@ public class BioCSentence {
   protected Map<String, String>  infons;
 
   /**
-   * {@link Annotation}s on the original text
+   * {@link BioCAnnotation}s on the original text
    */
   protected List<BioCAnnotation> annotations;
 

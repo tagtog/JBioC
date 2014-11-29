@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Relationship between multiple {@link Annotation}s and possibly other
- * {@code Relation}s.
+ * Relationship between multiple {@link BioCAnnotation}s and possibly other
+ * {@code BioCRelation}s.
  */
 public class BioCRelation implements Iterable<BioCNode> {
 
@@ -44,11 +44,11 @@ public class BioCRelation implements Iterable<BioCNode> {
   public void addNode(BioCNode node) {
     nodes.add(node);
   }
- 
+
   public void addNode(String refId, String role) {
 	    addNode(new BioCNode (refId, role));
 	  }
-  
+
   public String getID() {
     return id;
   }
