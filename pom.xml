@@ -1,0 +1,153 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <name>JBioC</name>
+  <description>BioC Format, Java Implementation</description>
+  <groupId>bioc</groupId>
+  <artifactId>jbioc</artifactId>
+  <version>1.1.0-SNAPSHOT</version>
+
+  <packaging>jar</packaging>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.resources.sourceEncoding>UTF-8</project.resources.sourceEncoding>
+  </properties>
+
+  <build>
+    <plugins>
+
+	  <plugin>
+  	  <groupId>org.apache.maven.plugins</groupId>
+  	  <artifactId>maven-compiler-plugin</artifactId>
+  	  <version>2.5.1</version>
+  	  <configuration>
+    	  <source>1.6</source>
+    	  <target>1.6</target>
+  	</configuration>
+	  </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>2.0.4</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.3</version>
+        <executions>
+          <execution>
+            <id>attach-javadocs</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+    </plugins>
+  </build>
+
+  <repositories>
+    <repository>
+	  <id>bionlp-sourceforge</id>
+	  <url>http://svn.code.sf.net/p/bionlp/code/repo/</url>
+    </repository>
+  </repositories>
+
+  <dependencies>
+    <dependency>
+	  <groupId>org.codehaus.woodstox</groupId>
+	  <artifactId>stax2-api</artifactId>
+	  <version>3.0.1</version>
+    </dependency>
+
+    <dependency>
+	  <groupId>xmlunit</groupId>
+	  <artifactId>xmlunit</artifactId>
+	  <version>1.4</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+	  <groupId>junit</groupId>
+	  <artifactId>junit-dep</artifactId>
+	  <version>4.7</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- the ccp-nlp core artifact -->
+    <dependency>
+      <groupId>edu.ucdenver.ccp</groupId>
+      <artifactId>ccp-nlp-core</artifactId>
+      <version>3.1</version>
+    </dependency>
+
+    <!-- the ccp-nlp uima artifact -->
+    <dependency>
+      <groupId>edu.ucdenver.ccp</groupId>
+      <artifactId>ccp-nlp-uima</artifactId>
+      <version>3.1</version>
+    </dependency>
+
+    <!-- the ccp-nlp uima test artifact -->
+    <dependency>
+      <groupId>edu.ucdenver.ccp</groupId>
+      <artifactId>ccp-nlp-uima</artifactId>
+      <version>3.1</version>
+      <type>test-jar</type>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- the ccp-nlp uima collections artifact -->
+    <dependency>
+      <groupId>edu.ucdenver.ccp</groupId>
+      <artifactId>ccp-nlp-uima-collections</artifactId>
+      <version>3.1</version>
+    </dependency>
+
+    <!-- the ccp-nlp uima serialization artifact -->
+    <dependency>
+      <groupId>edu.ucdenver.ccp</groupId>
+      <artifactId>ccp-nlp-uima-serialization</artifactId>
+      <version>3.1</version>
+    </dependency>
+
+    <!-- the ccp-nlp uima shims artifact -->
+    <dependency>
+      <groupId>edu.ucdenver.ccp</groupId>
+      <artifactId>ccp-nlp-uima-shims</artifactId>
+      <version>3.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>edu.ucdenver.ccp</groupId>
+      <artifactId>biolemmatizer-core</artifactId>
+      <version>1.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>edu.ucdenver.ccp</groupId>
+      <artifactId>biolemmatizer-uima</artifactId>
+      <version>1.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>woodstox</groupId>
+      <artifactId>wstx-asl</artifactId>
+      <version>3.2.7</version>
+    </dependency>
+
+  </dependencies>
+
+</project>
