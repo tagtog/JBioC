@@ -1,4 +1,4 @@
-package bioc.test;
+package bioc.manual;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

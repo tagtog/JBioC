@@ -1,4 +1,4 @@
-package bioc.test;
+package bioc.manual;
 
 /**
  * Another copy the XML program. Use {@code CopyConverter} to copy the

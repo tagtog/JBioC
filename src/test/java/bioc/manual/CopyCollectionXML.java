@@ -1,4 +1,4 @@
-package bioc.test;
+package bioc.manual;
 
 /**
  * Another copy the XML program. Whole Collection IO is used.

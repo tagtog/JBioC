@@ -1,4 +1,4 @@
-package bioc.test;
+package bioc.manual;
 
 /*
  * Split passages into sentences. This is a demonstration of what a useful

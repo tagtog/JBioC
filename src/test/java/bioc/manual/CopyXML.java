@@ -1,4 +1,4 @@
-package bioc.test;
+package bioc.manual;
 
 /**
  * Copy the XML program. Document at-a-time IO is used.
