@@ -18,13 +18,13 @@ import bioc.io.BioCFactory;
  * Test BioCDocumentReader and BioCDocumentWriter
  */
 public class FindAbbr {
-  
-  private AbbrConverter converter; 
-  
+
+  private AbbrConverter converter;
+
   public FindAbbr() {
-    converter = new AbbrConverter();   
+    converter = new AbbrConverter();
   }
-  
+
   public static void main(String[] args)
       throws IOException, XMLStreamException {
 
@@ -32,7 +32,7 @@ public class FindAbbr {
       System.err.println("usage: java -jar FindAbbr in.xml out.xml");
       System.exit(-1);
     }
-    
+
     FindAbbr copy_xml = new FindAbbr();
 
     copy_xml.copy(args[0], args[1], BioCFactory.WOODSTOX);
@@ -48,11 +48,11 @@ public class FindAbbr {
 						  new FileOutputStream(outXML), "UTF-8"));
 
     BioCCollection collection = reader.readCollectionInfo();
-    
-    
+
+
     writer.writeCollectionInfo(collection);
     BioCDocument doc = null;
-    while ((doc = reader.readDocument()) != null) { 
+    while ((doc = reader.readDocument()) != null) {
       BioCDocument outDoc = converter.getDocument(doc);
       writer.writeDocument(outDoc);
     }
@@ -60,6 +60,6 @@ public class FindAbbr {
     writer.close();
 
   }
-  
-    
+
+
 }
