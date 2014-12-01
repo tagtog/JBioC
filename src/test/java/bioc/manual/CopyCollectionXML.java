@@ -23,7 +23,7 @@ public class CopyCollectionXML {
       throws XMLStreamException, IOException {
 
     if (args.length != 2) {
-      System.err.println("usage: java Copy4_XML in.xml out.xml");
+      System.err.println("usage: java " + CopyCollectionXML.class.getName() + " in.xml out.xml");
       System.exit(-1);
     }
 
@@ -33,7 +33,7 @@ public class CopyCollectionXML {
 
   public void copy(String inXML, String outXML)
       throws XMLStreamException, IOException {
-	  
+
 	  BioCFactory factory = BioCFactory.newFactory(BioCFactory.WOODSTOX);
 	  BioCCollectionReader reader =
 			  factory.createBioCCollectionReader(new FileReader(inXML));
@@ -41,7 +41,7 @@ public class CopyCollectionXML {
 			  factory.createBioCCollectionWriter(
 					  new OutputStreamWriter(
 							  new FileOutputStream(outXML), "UTF-8"));
-    
+
     BioCCollection collection = reader.readCollection();
 
     CopyConverter converter = new CopyConverter();
