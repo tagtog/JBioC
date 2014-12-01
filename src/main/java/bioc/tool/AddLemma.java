@@ -16,21 +16,21 @@ import bioc.io.BioCFactory;
  * Test BioCDocumentReader and BioCDocumentWriter
  */
 public class AddLemma {
-  
-  private LemmaConverter converter; 
-  
+
+  private LemmaConverter converter;
+
   public AddLemma() {
-    converter = new LemmaConverter();   
+    converter = new LemmaConverter();
   }
-  
+
   public static void main(String[] args)
       throws IOException, XMLStreamException {
 
     if (args.length != 2) {
-      System.err.println("usage: java -jar ModifyXML in.xml out.xml");
+      System.err.println("usage: java -cp <...> " + AddLemma.class.getName() + " in.xml out.xml");
       System.exit(-1);
     }
-    
+
     AddLemma copy_xml = new AddLemma();
 
     copy_xml.copy(args[0], args[1], BioCFactory.WOODSTOX);
@@ -45,11 +45,11 @@ public class AddLemma {
         .createBioCDocumentWriter(new FileWriter(outXML));
 
     BioCCollection collection = reader.readCollectionInfo();
-    
-    
+
+
     writer.writeCollectionInfo(collection);
     BioCDocument doc = null;
-    while ((doc = reader.readDocument()) != null) { 
+    while ((doc = reader.readDocument()) != null) {
       BioCDocument outDoc = converter.getDocument(doc);
       writer.writeDocument(outDoc);
     }
@@ -57,6 +57,6 @@ public class AddLemma {
     writer.close();
 
   }
-  
-    
+
+
 }
