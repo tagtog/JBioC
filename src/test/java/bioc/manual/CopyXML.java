@@ -32,19 +32,19 @@ public class CopyXML {
       parser = args[1];
       fileArgs += 2;
     }
-    
+
     if ( args.length != fileArgs+2 )
       usage();
-    
+
     CopyXML copy_xml = new CopyXML();
     copy_xml.copy(parser, args[fileArgs], args[fileArgs+1]);
   }
 
   protected static void usage() {
-    System.err.println("usage: java Copy_XML [-p parser] in.xml out.xml");
+    System.err.println("usage: java CopyXML [-p parser] in.xml out.xml");
     System.exit(-1);
   }
- 
+
   public void copy(String parser, String inXML, String outXML)
       throws XMLStreamException, IOException {
 
