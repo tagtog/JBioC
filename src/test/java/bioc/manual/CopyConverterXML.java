@@ -3,7 +3,7 @@ package bioc.manual;
 /**
  * Another copy the XML program. Use {@code CopyConverter} to copy the
  * data structure before writing instead of just writing the original
- * data. Several useful programs use this as a base class for walking 
+ * data. Several useful programs use this as a base class for walking
  * the BioC data.
  **/
 
@@ -26,7 +26,7 @@ public class CopyConverterXML {
       throws XMLStreamException, IOException {
 
     if (args.length != 2) {
-      System.err.println("usage: java Copy2_XML in.xml out.xml");
+      System.err.println("usage: java " + CopyConverterXML.class.getName() + " in.xml out.xml");
       System.exit(-1);
     }
 
@@ -36,7 +36,7 @@ public class CopyConverterXML {
 
   public void copy(String inXML, String outXML)
       throws XMLStreamException, IOException {
-	  
+
 	  BioCFactory factory = BioCFactory.newFactory(BioCFactory.WOODSTOX);
 	  BioCDocumentReader reader =
 			  factory.createBioCDocumentReader(new FileReader(inXML));
@@ -44,7 +44,7 @@ public class CopyConverterXML {
 			  factory.createBioCDocumentWriter(
 					  new OutputStreamWriter(
 							  new FileOutputStream(outXML), "UTF-8"));
-    
+
     BioCCollection collection = reader.readCollectionInfo();
 
     CopyConverter converter = new CopyConverter();
