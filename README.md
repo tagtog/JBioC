@@ -2,7 +2,7 @@ This is a java and maven-packaged implementation of the [BioC exchange format](h
 
 Initial credits go fully to the authors of the BioC project and specially to the authors of the first java code v1.0, from which this implementation was derived.
 
-[![Build Status](https://travis-ci.org/jmcejuela/JBioC.svg)](https://travis-ci.org/jmcejuela/JBioC)
+[![Build Status](https://travis-ci.org/tagtog/JBioC.svg)](https://travis-ci.org/jmcejuela/JBioC)
 
 ## This repository
 
