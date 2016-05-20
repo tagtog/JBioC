@@ -18,15 +18,15 @@
   <build>
     <plugins>
 
-	  <plugin>
-  	  <groupId>org.apache.maven.plugins</groupId>
-  	  <artifactId>maven-compiler-plugin</artifactId>
-  	  <version>2.5.1</version>
-  	  <configuration>
-    	  <source>1.6</source>
-    	  <target>1.6</target>
-  	</configuration>
-	  </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.5.1</version>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -61,16 +61,16 @@
 
   <repositories>
     <repository>
-	  <id>bionlp-sourceforge</id>
-	  <url>http://svn.code.sf.net/p/bionlp/code/repo/</url>
+      <id>bionlp-sourceforge</id>
+      <url>http://svn.code.sf.net/p/bionlp/code/repo/</url>
     </repository>
   </repositories>
 
   <dependencies>
     <dependency>
-	  <groupId>org.codehaus.woodstox</groupId>
-	  <artifactId>stax2-api</artifactId>
-	  <version>3.0.1</version>
+      <groupId>org.codehaus.woodstox</groupId>
+      <artifactId>stax2-api</artifactId>
+      <version>3.0.1</version>
     </dependency>
 
     <dependency>
@@ -80,16 +80,16 @@
     </dependency>
 
     <dependency>
-	  <groupId>xmlunit</groupId>
-	  <artifactId>xmlunit</artifactId>
-	  <version>1.4</version>
+      <groupId>xmlunit</groupId>
+      <artifactId>xmlunit</artifactId>
+      <version>1.4</version>
       <scope>test</scope>
     </dependency>
 
     <dependency>
-	  <groupId>junit</groupId>
-	  <artifactId>junit-dep</artifactId>
-	  <version>4.7</version>
+      <groupId>junit</groupId>
+      <artifactId>junit-dep</artifactId>
+      <version>4.7</version>
       <scope>test</scope>
     </dependency>
 
