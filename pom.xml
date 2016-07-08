@@ -6,7 +6,7 @@
 
   <groupId>bioc</groupId>
   <artifactId>jbioc</artifactId>
-  <version>1.1.4</version>
+  <version>1.1.5</version>
 
   <packaging>jar</packaging>
 
@@ -98,6 +98,13 @@
       <groupId>edu.ucdenver.ccp</groupId>
       <artifactId>ccp-nlp-core</artifactId>
       <version>3.3.1</version>
+    </dependency>
+
+    <!-- Sub dependency of ccp-nlp. Yet forced upgraded version -->
+    <dependency>
+      <groupId>edu.ucdenver.ccp</groupId>
+      <artifactId>datasource-identifiers</artifactId>
+      <version>0.6.1</version>
     </dependency>
 
     <!-- the ccp-nlp uima artifact -->
