@@ -6,7 +6,7 @@
 
   <groupId>bioc</groupId>
   <artifactId>jbioc</artifactId>
-  <version>1.1.5</version>
+  <version>1.1.6</version>
 
   <packaging>jar</packaging>
 
@@ -104,6 +104,13 @@
     <dependency>
       <groupId>edu.ucdenver.ccp</groupId>
       <artifactId>datasource-identifiers</artifactId>
+      <version>0.6.1</version>
+    </dependency>
+
+    <!-- Sub dependency of ccp-nlp. Yet forced upgraded version -->
+    <dependency>
+      <groupId>edu.ucdenver.ccp</groupId>
+      <artifactId>datasource-fileparsers</artifactId>
       <version>0.6.1</version>
     </dependency>
 
