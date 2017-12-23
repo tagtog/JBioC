@@ -97,7 +97,7 @@
     <dependency>
       <groupId>edu.ucdenver.ccp</groupId>
       <artifactId>ccp-nlp-core</artifactId>
-      <version>3.3.1</version>
+      <version>3.3.2</version>
     </dependency>
 
     <!-- Sub dependency of ccp-nlp. Yet forced upgraded version -->
@@ -118,14 +118,14 @@
     <dependency>
       <groupId>edu.ucdenver.ccp</groupId>
       <artifactId>ccp-nlp-uima</artifactId>
-      <version>3.3.1</version>
+      <version>3.3.2</version>
     </dependency>
 
     <!-- the ccp-nlp uima test artifact -->
     <dependency>
       <groupId>edu.ucdenver.ccp</groupId>
       <artifactId>ccp-nlp-uima</artifactId>
-      <version>3.3.1</version>
+      <version>3.3.2</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
@@ -134,21 +134,21 @@
     <dependency>
       <groupId>edu.ucdenver.ccp</groupId>
       <artifactId>ccp-nlp-uima-collections</artifactId>
-      <version>3.3.1</version>
+      <version>3.3.2</version>
     </dependency>
 
     <!-- the ccp-nlp uima serialization artifact -->
     <dependency>
       <groupId>edu.ucdenver.ccp</groupId>
       <artifactId>ccp-nlp-uima-serialization</artifactId>
-      <version>3.3.1</version>
+      <version>3.3.2</version>
     </dependency>
 
     <!-- the ccp-nlp uima shims artifact -->
     <dependency>
       <groupId>edu.ucdenver.ccp</groupId>
       <artifactId>ccp-nlp-uima-shims</artifactId>
-      <version>3.3.1</version>
+      <version>3.3.2</version>
     </dependency>
 
     <!-- BioLemmatizer -->
